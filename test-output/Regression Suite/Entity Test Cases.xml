@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="Dell-PC" failures="1" tests="5" name="tests.TestEntityFeatures" time="0.898" errors="0" timestamp="10 Dec 2018 06:32:09 GMT">
+  <testcase classname="tests.TestEntityFeatures" name="test_AddEntity" time="0.882">
+    <failure type="org.testng.TestNGException" message="
+Number of parameter values passed in using data provider exceeds number of parameters defined on test method">
+      <![CDATA[org.testng.TestNGException: 
+Number of parameter values passed in using data provider exceeds number of parameters defined on test method
+... Removed 18 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase classname="tests.TestEntityFeatures" name="test_EditEntity" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="tests.TestEntityFeatures" name="test_Inactivate_Entity" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="tests.TestEntityFeatures" name="test_Activate_Entity" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="tests.TestEntityFeatures" name="test_Delete_Entity" time="0.001">
+    <skipped/>
+  </testcase>
+</testsuite>

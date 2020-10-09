@@ -1,0 +1,949 @@
+<html>
+<head>
+<title>TestNG:  TestNG Test Group</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>TestNG Test Group</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/13/5</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Dec 06 14:59:57 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>388 seconds (388169 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.TestEntityFeatures.test_AddEntity()'><b>test_AddEntity</b><br>Test class: tests.TestEntityFeatures</td>
+<td><div><pre>org.testng.TestNGException: 
+Number of parameter values passed in using data provider exceeds number of parameters defined on test method
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace977650730", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace977650730'><pre>org.testng.TestNGException: 
+Number of parameter values passed in using data provider exceeds number of parameters defined on test method
+	at org.testng.internal.Invoker.injectParameters(Invoker.java:1274)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1164)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+</pre></div></td>
+<td>0</td>
+<td>tests.TestEntityFeatures@6646153</td></tr>
+<tr>
+<td title='tests.TestStudentFeatures.test_AddParent()'><b>test_AddParent</b><br>Test class: tests.TestStudentFeatures<br>Parameters: [Ljava.lang.String;@6dbbdf92</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Student&quot;}
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
+System info: host: &apos;DELL-PC&apos;, ip: &apos;192.168.50.108&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\Anjana\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61860}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: d4fd888ab095fe17beab68a53a24c36f
+*** Element info: {Using=link text, value=Student}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:376)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at PageFactory.HomePage.selectStudent(Unknown Source)
+	at tests.TestStudentFeatures.test_AddParent(Unknown Source)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace274100821", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace274100821'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Student"}
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'DELL-PC', ip: '192.168.50.108', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\Anjana\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61860}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: d4fd888ab095fe17beab68a53a24c36f
+*** Element info: {Using=link text, value=Student}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:376)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at PageFactory.HomePage.selectStudent(Unknown Source)
+	at tests.TestStudentFeatures.test_AddParent(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+</pre></div></td>
+<td>0</td>
+<td>tests.TestStudentFeatures@21507a04</td></tr>
+<tr>
+<td title='tests.TestStudentFeatures.test_AddParent()'><b>test_AddParent</b><br>Test class: tests.TestStudentFeatures<br>Parameters: [Ljava.lang.String;@7ba1cdbe<br/>
+<a href="#Output-429804587" onClick='toggleBox("Output-429804587", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-429804587" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-429804587">
+Clicked on Student sidebar link<br><br/>
+ Entity AutoEntity1<br><br/>
+First Name Priyanka<br><br/>
+Middle Name H<br><br/>
+Last Name Chopra<br><br/>
+Successfully selected date from the Calender<br/>
+ DOB 09 April 2016<br><br/>
+ Class I- FIRST<br><br/>
+ Section C<br><br/>
+RegistrationNumber :AUTO271<br><br/>
+Address rohan jharokha<br><br/>
+Address2 Yemlur<br><br/>
+Address3 Bengaluru<br><br/>
+Country India<br><br/>
+State Karnataka<br><br/>
+City Bengaluru<br><br/>
+Pincode 548693<br><br/>
+Add student Form is filled with above details<br><br/>
+Clicked on AddParent button<br><br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: 
+	at tests.TestStudentFeatures.test_AddParent(Unknown Source)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace429804587", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace429804587'><pre>java.lang.AssertionError: 
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:57)
+	at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:22)
+	at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:31)
+	at tests.TestStudentFeatures.test_AddParent(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+</pre></div></td>
+<td>86</td>
+<td>tests.TestStudentFeatures@21507a04</td></tr>
+<tr>
+<td title='tests.TestStudentFeatures.test_AddParent()'><b>test_AddParent</b><br>Test class: tests.TestStudentFeatures<br>Parameters: [Ljava.lang.String;@226e07e7<br/>
+<a href="#Output-363616706" onClick='toggleBox("Output-363616706", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-363616706" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-363616706">
+Clicked on Student sidebar link<br><br/>
+ Entity AutoEntity1<br><br/>
+First Name Deepika<br><br/>
+Middle Name R<br><br/>
+Last Name Padukone<br><br/>
+Successfully selected date from the Calender<br/>
+ DOB 03 August 2016<br><br/>
+ Class II - SECOND<br><br/>
+ Section A<br><br/>
+RegistrationNumber :AUTO923<br><br/>
+Address BTM Layout<br><br/>
+Address2 1st Stage<br><br/>
+Address3 near udpi garden<br><br/>
+Country India<br><br/>
+State Karnataka<br><br/>
+City Bengaluru<br><br/>
+Pincode 698742<br><br/>
+Add student Form is filled with above details<br><br/>
+Clicked on AddParent button<br><br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: 
+	at tests.TestStudentFeatures.test_AddParent(Unknown Source)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace363616706", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace363616706'><pre>java.lang.AssertionError: 
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:57)
+	at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:22)
+	at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:31)
+	at tests.TestStudentFeatures.test_AddParent(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+</pre></div></td>
+<td>47</td>
+<td>tests.TestStudentFeatures@21507a04</td></tr>
+<tr>
+<td title='tests.TestStudentFeatures.test_AddParent()'><b>test_AddParent</b><br>Test class: tests.TestStudentFeatures<br>Parameters: [Ljava.lang.String;@9880a15<br/>
+<a href="#Output-634991000" onClick='toggleBox("Output-634991000", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-634991000" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-634991000">
+Clicked on Student sidebar link<br><br/>
+ Entity AutoEntity1<br><br/>
+First Name Arjun<br><br/>
+Middle Name H<br><br/>
+Last Name Kapoor<br><br/>
+Successfully selected date from the Calender<br/>
+ DOB 14 March 2015<br><br/>
+ Class I- FIRST<br><br/>
+ Section D<br><br/>
+RegistrationNumber :AUTO761<br><br/>
+Address Bilekahalli<br><br/>
+Address2 Anugraha Layout<br><br/>
+Address3 Bannerghatta<br><br/>
+Country India<br><br/>
+State Karnataka<br><br/>
+City Bengaluru<br><br/>
+Pincode 698745<br><br/>
+Add student Form is filled with above details<br><br/>
+Clicked on AddParent button<br><br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: 
+	at tests.TestStudentFeatures.test_AddParent(Unknown Source)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace634991000", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace634991000'><pre>java.lang.AssertionError: 
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:57)
+	at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:22)
+	at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:31)
+	at tests.TestStudentFeatures.test_AddParent(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+</pre></div></td>
+<td>60</td>
+<td>tests.TestStudentFeatures@21507a04</td></tr>
+<tr>
+<td title='tests.TestStudentFeatures.test_AddParent()'><b>test_AddParent</b><br>Test class: tests.TestStudentFeatures<br>Parameters: [Ljava.lang.String;@3de88f64<br/>
+<a href="#Output-1474155611" onClick='toggleBox("Output-1474155611", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1474155611" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1474155611">
+Clicked on Student sidebar link<br><br/>
+ Entity AutoEntity1<br><br/>
+First Name Madhuri<br><br/>
+Middle Name S<br><br/>
+Last Name Dixit<br><br/>
+Successfully selected date from the Calender<br/>
+ DOB 25 February 2016<br><br/>
+ Class III - THIRD<br><br/>
+ Section E<br><br/>
+RegistrationNumber :AUTO136<br><br/>
+Address rohan jharokha<br><br/>
+Address2 Yemlur<br><br/>
+Address3 Bengaluru<br><br/>
+Country India<br><br/>
+State Karnataka<br><br/>
+City Bengaluru<br><br/>
+Pincode 869547<br><br/>
+Add student Form is filled with above details<br><br/>
+Clicked on AddParent button<br><br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: 
+	at tests.TestStudentFeatures.test_AddParent(Unknown Source)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1474155611", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1474155611'><pre>java.lang.AssertionError: 
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:57)
+	at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:22)
+	at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:31)
+	at tests.TestStudentFeatures.test_AddParent(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+</pre></div></td>
+<td>37</td>
+<td>tests.TestStudentFeatures@21507a04</td></tr>
+<tr>
+<td title='tests.TestStudentFeatures.test_AddParent()'><b>test_AddParent</b><br>Test class: tests.TestStudentFeatures<br>Parameters: [Ljava.lang.String;@79b8ecb</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
+System info: host: &apos;DELL-PC&apos;, ip: &apos;192.168.50.108&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\Anjana\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61860}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: d4fd888ab095fe17beab68a53a24c36f
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at PageFactory.HomePage.selectStudent(Unknown Source)
+	at tests.TestStudentFeatures.test_AddParent(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1532989443", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1532989443'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'DELL-PC', ip: '192.168.50.108', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\Anjana\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61860}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: d4fd888ab095fe17beab68a53a24c36f
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at PageFactory.HomePage.selectStudent(Unknown Source)
+	at tests.TestStudentFeatures.test_AddParent(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+</pre></div></td>
+<td>3</td>
+<td>tests.TestStudentFeatures@21507a04</td></tr>
+<tr>
+<td title='tests.TestStudentFeatures.test_AddParent()'><b>test_AddParent</b><br>Test class: tests.TestStudentFeatures<br>Parameters: [Ljava.lang.String;@4ec8d9b2<br/>
+<a href="#Output-1493087920" onClick='toggleBox("Output-1493087920", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1493087920" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1493087920">
+Clicked on Student sidebar link<br><br/>
+ Entity AutoEntity1<br><br/>
+First Name Khajol<br><br/>
+Middle Name D<br><br/>
+Last Name Devgan<br><br/>
+Successfully selected date from the Calender<br/>
+ DOB 05 September 2016<br><br/>
+ Class I- FIRST<br><br/>
+ Section B<br><br/>
+RegistrationNumber :AUTO768<br><br/>
+Address Bilekahalli<br><br/>
+Address2 Anugraha Layout<br><br/>
+Address3 Bannerghatta<br><br/>
+Country India<br><br/>
+State Karnataka<br><br/>
+City Bengaluru<br><br/>
+Pincode 824563<br><br/>
+Add student Form is filled with above details<br><br/>
+Clicked on AddParent button<br><br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: 
+	at tests.TestStudentFeatures.test_AddParent(Unknown Source)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1493087920", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1493087920'><pre>java.lang.AssertionError: 
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:57)
+	at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:22)
+	at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:31)
+	at tests.TestStudentFeatures.test_AddParent(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+</pre></div></td>
+<td>28</td>
+<td>tests.TestStudentFeatures@21507a04</td></tr>
+<tr>
+<td title='tests.TestStudentFeatures.test_AddParent()'><b>test_AddParent</b><br>Test class: tests.TestStudentFeatures<br>Parameters: [Ljava.lang.String;@c0013b8<br/>
+<a href="#Output-1872158052" onClick='toggleBox("Output-1872158052", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1872158052" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1872158052">
+Clicked on Student sidebar link<br><br/>
+ Entity AutoEntity1<br><br/>
+First Name Kangana<br><br/>
+Middle Name K<br><br/>
+Last Name Ranaut<br><br/>
+Successfully selected date from the Calender<br/>
+ DOB 08 October 2016<br><br/>
+ Class II - SECOND<br><br/>
+ Section A<br><br/>
+RegistrationNumber :AUTO444<br><br/>
+Address rohan jharokha<br><br/>
+Address2 Yemlur<br><br/>
+Address3 Bengaluru<br><br/>
+Country India<br><br/>
+State Karnataka<br><br/>
+City Bengaluru<br><br/>
+Pincode 532698<br><br/>
+Add student Form is filled with above details<br><br/>
+Clicked on AddParent button<br><br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: 
+	at tests.TestStudentFeatures.test_AddParent(Unknown Source)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1872158052", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1872158052'><pre>java.lang.AssertionError: 
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:57)
+	at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:22)
+	at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:31)
+	at tests.TestStudentFeatures.test_AddParent(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+</pre></div></td>
+<td>31</td>
+<td>tests.TestStudentFeatures@21507a04</td></tr>
+<tr>
+<td title='tests.TestStudentFeatures.test_AddParent()'><b>test_AddParent</b><br>Test class: tests.TestStudentFeatures<br>Parameters: [Ljava.lang.String;@2493eec6</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element &lt;a href=&quot;/User/StudentGrid?userTypeName=Student&quot;&gt;...&lt;/a&gt; is not clickable at point (130, 272). Other element would receive the click: &lt;div id=&quot;jquery-loader-background&quot; style=&quot;z-index: 30000; position: absolute; top: 0px; left: 0px; width: 1366px; height: 613px; opacity: 0.4;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
+System info: host: &apos;DELL-PC&apos;, ip: &apos;192.168.50.108&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\Anjana\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61860}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: d4fd888ab095fe17beab68a53a24c36f
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at PageFactory.HomePage.selectStudent(Unknown Source)
+	at tests.TestStudentFeatures.test_AddParent(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2009218448", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2009218448'><pre>org.openqa.selenium.WebDriverException: unknown error: Element &lt;a href="/User/StudentGrid?userTypeName=Student"&gt;...&lt;/a&gt; is not clickable at point (130, 272). Other element would receive the click: &lt;div id="jquery-loader-background" style="z-index: 30000; position: absolute; top: 0px; left: 0px; width: 1366px; height: 613px; opacity: 0.4;"&gt;&lt;/div&gt;
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'DELL-PC', ip: '192.168.50.108', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\Anjana\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61860}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: d4fd888ab095fe17beab68a53a24c36f
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at PageFactory.HomePage.selectStudent(Unknown Source)
+	at tests.TestStudentFeatures.test_AddParent(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+</pre></div></td>
+<td>0</td>
+<td>tests.TestStudentFeatures@21507a04</td></tr>
+<tr>
+<td title='tests.TestStudentFeatures.test_AddParent()'><b>test_AddParent</b><br>Test class: tests.TestStudentFeatures<br>Parameters: [Ljava.lang.String;@4ec0229c</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
+System info: host: &apos;DELL-PC&apos;, ip: &apos;192.168.50.108&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\Anjana\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61860}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: d4fd888ab095fe17beab68a53a24c36f
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at PageFactory.HomePage.selectStudent(Unknown Source)
+	at tests.TestStudentFeatures.test_AddParent(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1253827612", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1253827612'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'DELL-PC', ip: '192.168.50.108', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\Anjana\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61860}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: d4fd888ab095fe17beab68a53a24c36f
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy13.click(Unknown Source)
+	at PageFactory.HomePage.selectStudent(Unknown Source)
+	at tests.TestStudentFeatures.test_AddParent(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+</pre></div></td>
+<td>6</td>
+<td>tests.TestStudentFeatures@21507a04</td></tr>
+<tr>
+<td title='tests.TestStudentFeatures.test_AddStudent()'><b>test_AddStudent</b><br>Test class: tests.TestStudentFeatures</td>
+<td><div><pre>org.testng.TestNGException: 
+Number of parameter values passed in using data provider exceeds number of parameters defined on test method
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace54176060", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace54176060'><pre>org.testng.TestNGException: 
+Number of parameter values passed in using data provider exceeds number of parameters defined on test method
+	at org.testng.internal.Invoker.injectParameters(Invoker.java:1274)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1164)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+</pre></div></td>
+<td>0</td>
+<td>tests.TestStudentFeatures@21507a04</td></tr>
+<tr>
+<td title='tests.TestEntityFeatures.test_EditEntity()'><b>test_EditEntity</b><br>Test class: tests.TestEntityFeatures</td>
+<td><div><pre>org.testng.TestNGException: 
+Number of parameter values passed in using data provider exceeds number of parameters defined on test method
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1836786457", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1836786457'><pre>org.testng.TestNGException: 
+Number of parameter values passed in using data provider exceeds number of parameters defined on test method
+	at org.testng.internal.Invoker.injectParameters(Invoker.java:1274)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1164)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.TestNG.privateMain(TestNG.java:1182)
+	at org.testng.TestNG.main(TestNG.java:1146)
+</pre></div></td>
+<td>0</td>
+<td>tests.TestEntityFeatures@6646153</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.TestEntityFeatures.test_Activate_Entity()'><b>test_Activate_Entity</b><br>Test class: tests.TestEntityFeatures<br/>
+<a href="#Output-1576607881" onClick='toggleBox("Output-1576607881", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1576607881" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1576607881">
+Clicked on Entity sidebar link<br><br/>
+Record found after matching the data in the grid AutoEntity3<br><br/>
+Clicked on Activate<br><br/>
+AutoEntity3 Data is available in the Grid Table<br><br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>tests.TestEntityFeatures@6646153</td></tr>
+<tr>
+<td title='tests.TestEntityFeatures.test_Delete_Entity()'><b>test_Delete_Entity</b><br>Test class: tests.TestEntityFeatures<br/>
+<a href="#Output-297642807" onClick='toggleBox("Output-297642807", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-297642807" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-297642807">
+Clicked on Entity sidebar link<br><br/>
+Record found after matching the data in the grid AutoEntity3<br><br/>
+Clicked on delete<br><br/>
+AutoEntity3 Data is available in the Grid Table<br><br/>
+</div>
+</td>
+<td></td>
+<td>41</td>
+<td>tests.TestEntityFeatures@6646153</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.TestStudentFeatures.test_Activate_Student()'><b>test_Activate_Student</b><br>Test class: tests.TestStudentFeatures</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='tests.TestStudentFeatures.test_Delete_Student()'><b>test_Delete_Student</b><br>Test class: tests.TestStudentFeatures</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='tests.TestStudentFeatures.test_Edit_Student()'><b>test_Edit_Student</b><br>Test class: tests.TestStudentFeatures</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='tests.TestEntityFeatures.test_Inactivate_Entity()'><b>test_Inactivate_Entity</b><br>Test class: tests.TestEntityFeatures</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='tests.TestStudentFeatures.test_Inactivate_Student()'><b>test_Inactivate_Student</b><br>Test class: tests.TestStudentFeatures</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+</body>
+</html>

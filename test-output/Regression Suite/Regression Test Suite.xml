@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="Dell-PC" failures="1" tests="11" name="tests.TestEntityFeatures" time="0.59" errors="0" timestamp="7 Dec 2018 11:13:09 GMT">
+  <testcase classname="tests.TestEntityFeatures" name="test_AddEntity" time="0.572">
+    <failure type="org.testng.TestNGException" message="
+Number of parameter values passed in using data provider exceeds number of parameters defined on test method">
+      <![CDATA[org.testng.TestNGException: 
+Number of parameter values passed in using data provider exceeds number of parameters defined on test method
+... Removed 18 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase classname="tests.TestEntityFeatures" name="test_EditEntity" time="0.002">
+    <skipped/>
+  </testcase>
+  <testcase classname="tests.TestEntityFeatures" name="test_Inactivate_Entity" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase classname="tests.TestEntityFeatures" name="test_Activate_Entity" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="tests.TestEntityFeatures" name="test_Delete_Entity" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase classname="tests.TestStudentFeatures" name="test_AddParent" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase classname="tests.TestStudentFeatures" name="test_AddStudent" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="tests.TestStudentFeatures" name="test_Edit_Student" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase classname="tests.TestStudentFeatures" name="test_Inactivate_Student" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="tests.TestStudentFeatures" name="test_Activate_Student" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase classname="tests.TestStudentFeatures" name="test_Delete_Student" time="0.001">
+    <skipped/>
+  </testcase>
+</testsuite>

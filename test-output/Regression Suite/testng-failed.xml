@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression Suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="tests.TestNotificationFeature">
+        <methods>
+          <include name="b_EditNotification" invocation-numbers="0"/>
+          <include name="afterSuite"/>
+          <include name="afterMethod"/>
+          <include name="intilization"/>
+          <include name="closeApplication"/>
+        </methods>
+      </class> <!-- tests.TestNotificationFeature -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Regression Suite] -->

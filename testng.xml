@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+ <suite name="Regression Suite" verbose="1" >
+<test name="Test Suite">
+    <classes> 
+		<class name="tests.TestEntityFeatures"/>
+		<class name="tests.TestConductorFeatures"/>
+		<class name="tests.TestDriverFeatures"/>
+ 		<class name="tests.TestRoleFeatures"/>
+		<class name="tests.TestStaffFeatures"/>
+		<class name="tests.TestDeviceFeatures"/>
+		<class name="tests.TestVehicleFeatures"/>
+		<class name="tests.TestStopFeatures"/>
+		<class name="tests.TestStudentFeatures"/>
+		<class name="tests.TestParentFeatures"/>
+		<class name="tests.TestUserStopMapping"/>
+		<class name="tests.TestRouteFeatures"/>
+		<class name="tests.TestNotificationFeature"/>
+		<class name="tests.TestScheduleFeatures"/>
+</classes>
+</test> 
+ </suite>

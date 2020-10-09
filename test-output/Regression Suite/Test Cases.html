@@ -1,0 +1,297 @@
+<html>
+<head>
+<title>TestNG:  Test Cases</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test Cases</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Dec 11 23:42:00 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>118 seconds (118365 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.TestEntityFeatures.a_AddEntity()'><b>a_AddEntity</b><br>Test class: tests.TestEntityFeatures<br>Parameters: [Ljava.lang.Object;@269308cc<br/>
+<a href="#Output-807872790" onClick='toggleBox("Output-807872790", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-807872790" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-807872790">
+=====TestCase AddEntity Started=====<br/>
+Clicked on Entity sidebar link<br><br/>
+Entity Name AutoChildEntity7<br><br/>
+Parents Entity AutoParentEntity2<br><br/>
+Javascript execution for Bind Parents details checkbox+"<br>"<br/>
+Bind Parents details true<br><br/>
+Add Entity Form is filled with above details<br><br/>
+Clicked on Save button<br><br/>
+Verifying the page title to ensure Create Entity was successful<br/>
+Page Title Verification Successful. Actual Entity<br><br/>
+AutoChildEntity7 Data is available in the Grid Table<br><br/>
+AutoChildEntity7 Entity Data added successfully<br/>
+Verification of Column Data Failed. Actual AutoChildEntity7 Expected AutoChildEntity2<br><br/>
+AutoParentEntity2 Data is available in the Grid Table<br><br/>
+Assertion verified. Actual AutoParentEntity2 Expected AutoParentEntity2<br><br/>
+Verification of Column Data Failed. Actual  Expected 08043543243<br><br/>
+Verification of Column Data Failed. Actual  Expected 9876543210<br><br/>
+Verification of Column Data Failed. Actual  Expected abc1@xyz.com<br><br/>
+Active Data is available in the Grid Table<br><br/>
+Assertion verified. Actual Active Expected Active<br><br/>
+Verification of Column Data Failed. Actual AutoChildEntity7 Expected AutoChildEntity4<br><br/>
+AutoParentEntity2 Data is available in the Grid Table<br><br/>
+Assertion verified. Actual AutoParentEntity2 Expected AutoParentEntity2<br><br/>
+Verification of Column Data Failed. Actual  Expected 08043543243<br><br/>
+Verification of Column Data Failed. Actual  Expected 9876543210<br><br/>
+Verification of Column Data Failed. Actual  Expected abc1@xyz.com<br><br/>
+Active Data is available in the Grid Table<br><br/>
+Assertion verified. Actual Active Expected Active<br><br/>
+Verification of Column Data Failed. Actual AutoChildEntity7 Expected AutoChildEntity5<br><br/>
+AutoParentEntity2 Data is available in the Grid Table<br><br/>
+Assertion verified. Actual AutoParentEntity2 Expected AutoParentEntity2<br><br/>
+Verification of Column Data Failed. Actual  Expected 08043543243<br><br/>
+Verification of Column Data Failed. Actual  Expected 9876543210<br><br/>
+Verification of Column Data Failed. Actual  Expected abc1@xyz.com<br><br/>
+Active Data is available in the Grid Table<br><br/>
+Assertion verified. Actual Active Expected Active<br><br/>
+AutoChildEntity7 Data is available in the Grid Table<br><br/>
+Assertion verified. Actual AutoChildEntity7 Expected AutoChildEntity7<br><br/>
+AutoParentEntity2 Data is available in the Grid Table<br><br/>
+Assertion verified. Actual AutoParentEntity2 Expected AutoParentEntity2<br><br/>
+Verification of Column Data Failed. Actual  Expected 08043543243<br><br/>
+Verification of Column Data Failed. Actual  Expected 9876543210<br><br/>
+Verification of Column Data Failed. Actual  Expected abc1@xyz.com<br><br/>
+Active Data is available in the Grid Table<br><br/>
+Assertion verified. Actual Active Expected Active<br><br/>
+Verification of data inside the grid table failed no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='FlatGrid']//*[contains(@class,'e-gridcontent')]//table[@class='e-table']/tbody/tr[5]/td[1]"}
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'DELL-PC', ip: '192.168.1.6', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\Anjana\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:63658}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: 6cd60536eff118ac765ebdc28ae49162
+*** Element info: {Using=xpath, value=.//*[@id='FlatGrid']//*[contains(@class,'e-gridcontent')]//table[@class='e-table']/tbody/tr[5]/td[1]}<br><br/>
+=====TestCase AddEntity Completed=====<br/>
+</div>
+</td>
+<td></td>
+<td>38</td>
+<td>tests.TestEntityFeatures@3c419631</td></tr>
+<tr>
+<td title='tests.TestEntityFeatures.b_EditEntity()'><b>b_EditEntity</b><br>Test class: tests.TestEntityFeatures<br>Parameters: [Ljava.lang.Object;@177ddd24<br/>
+<a href="#Output-1135523296" onClick='toggleBox("Output-1135523296", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1135523296" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1135523296">
+=====TestCase Edit Entity Started=====<br/>
+Clicked on Entity sidebar link<br><br/>
+Record found after matching the data in the grid AutoChildEntity7<br><br/>
+Clicked on Edit<br><br/>
+Parents Entity AutoParentEntity1<br><br/>
+LandlinePrimary 12321111<br><br/>
+Landline Sec 23343333<br><br/>
+Email xyz@abc.com<br><br/>
+PhonePrimary 955454544<br><br/>
+Phone Sec 9834343353<br><br/>
+Address modified<br><br/>
+Address2 modified2<br><br/>
+Address3 modified3<br><br/>
+Pincode 560085<br><br/>
+Add Entity Form is filled with above details<br><br/>
+Clicked on Save button<br><br/>
+Verifying the page title to ensure Create Entity was successful<br/>
+Page Title Verification Successful. Actual Entity<br><br/>
+AutoChildEntity7 Data edited successfully<br><br/>
+No more pages to navigate <br><br/>
+AutoChildEntity7 Entity Data edited successfully<br><br/>
+Active Data is available in the Grid Table<br><br/>
+Assertion verified. Actual Active Expected Active<br><br/>
+Verification of Column Data Failed. Actual 955454544 Expected | |<br><br/>
+Verification of Column Data Failed. Actual AutoParentEntity1 Expected | |<br><br/>
+Verification of Column Data Failed. Actual xyz@abc.com Expected | |<br><br/>
+Verification of Column Data Failed. Actual AutoChildEntity7 Expected parent<br><br/>
+Verification of Column Data Failed. Actual 12321111 Expected | |<br><br/>
+Active Data is available in the Grid Table<br><br/>
+Assertion verified. Actual Active Expected Active<br><br/>
+Verification of Column Data Failed. Actual 955454544 Expected | |<br><br/>
+Verification of Column Data Failed. Actual AutoParentEntity1 Expected | |<br><br/>
+Verification of Column Data Failed. Actual xyz@abc.com Expected | |<br><br/>
+Verification of Column Data Failed. Actual AutoChildEntity7 Expected child1<br><br/>
+Verification of Column Data Failed. Actual 12321111 Expected | |<br><br/>
+Active Data is available in the Grid Table<br><br/>
+Assertion verified. Actual Active Expected Active<br><br/>
+Verification of Column Data Failed. Actual 955454544 Expected | |<br><br/>
+Verification of Column Data Failed. Actual AutoParentEntity1 Expected | |<br><br/>
+Verification of Column Data Failed. Actual xyz@abc.com Expected | |<br><br/>
+Verification of Column Data Failed. Actual AutoChildEntity7 Expected TestEntity1<br><br/>
+Verification of Column Data Failed. Actual 12321111 Expected | |<br><br/>
+Active Data is available in the Grid Table<br><br/>
+Assertion verified. Actual Active Expected Active<br><br/>
+Verification of Column Data Failed. Actual 955454544 Expected | |<br><br/>
+Verification of Column Data Failed. Actual AutoParentEntity1 Expected | |<br><br/>
+Verification of Column Data Failed. Actual xyz@abc.com Expected | |<br><br/>
+Verification of Column Data Failed. Actual AutoChildEntity7 Expected NewEntity<br><br/>
+Verification of Column Data Failed. Actual 12321111 Expected | |<br><br/>
+Active Data is available in the Grid Table<br><br/>
+Assertion verified. Actual Active Expected Active<br><br/>
+Verification of Column Data Failed. Actual 955454544 Expected | |<br><br/>
+Verification of Column Data Failed. Actual AutoParentEntity1 Expected | |<br><br/>
+Verification of Column Data Failed. Actual xyz@abc.com Expected | |<br><br/>
+Verification of Column Data Failed. Actual AutoChildEntity7 Expected NewOne<br><br/>
+Verification of Column Data Failed. Actual 12321111 Expected | |<br><br/>
+Active Data is available in the Grid Table<br><br/>
+Assertion verified. Actual Active Expected Active<br><br/>
+Verification of Column Data Failed. Actual 955454544 Expected | |<br><br/>
+Verification of Column Data Failed. Actual AutoParentEntity1 Expected | |<br><br/>
+Verification of Column Data Failed. Actual xyz@abc.com Expected | |<br><br/>
+Verification of Column Data Failed. Actual AutoChildEntity7 Expected AutoParentEntity2<br><br/>
+Verification of Column Data Failed. Actual 12321111 Expected | |<br><br/>
+=====TestCase Edit Entity Completed=====<br/>
+</div>
+</td>
+<td></td>
+<td>48</td>
+<td>tests.TestEntityFeatures@3c419631</td></tr>
+<tr>
+<td title='tests.TestEntityFeatures.c_Inactivate_Entity()'><b>c_Inactivate_Entity</b><br>Test class: tests.TestEntityFeatures<br/>
+<a href="#Output-1747367695" onClick='toggleBox("Output-1747367695", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1747367695" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1747367695">
+=====TestCase Inactivate Entity Started=====<br/>
+Clicked on Entity sidebar link<br><br/>
+Record found after matching the data in the grid AutoChildEntity7<br><br/>
+Clicked on De Activate<br><br/>
+No more pages to navigate <br><br/>
+AutoChildEntity7 Data deactivated successfuly<br><br/>
+No more pages to navigate <br><br/>
+=====TestCase Inactivate Entity Completed=====<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>tests.TestEntityFeatures@3c419631</td></tr>
+<tr>
+<td title='tests.TestEntityFeatures.d_Activate_Entity()'><b>d_Activate_Entity</b><br>Test class: tests.TestEntityFeatures<br/>
+<a href="#Output-1605399367" onClick='toggleBox("Output-1605399367", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1605399367" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1605399367">
+=====TestCase Activate Entity Started=====<br/>
+Clicked on Entity sidebar link<br><br/>
+Record found after matching the data in the grid AutoChildEntity7<br><br/>
+Clicked on Activate<br><br/>
+AutoChildEntity7 Data not found in the Grid Table<br>no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='FlatGrid']//*[contains(@class,'e-gridcontent')]//table[@class='e-table']/tbody/tr[1]/td[0]"}
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'DELL-PC', ip: '192.168.1.6', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\Anjana\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:63658}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: 6cd60536eff118ac765ebdc28ae49162
+*** Element info: {Using=xpath, value=.//*[@id='FlatGrid']//*[contains(@class,'e-gridcontent')]//table[@class='e-table']/tbody/tr[1]/td[0]}<br/>
+AutoChildEntity7 Data activated successfully<br><br/>
+No more pages to navigate <br><br/>
+=====TestCase Activate Entity Completed=====<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>tests.TestEntityFeatures@3c419631</td></tr>
+<tr>
+<td title='tests.TestEntityFeatures.e_Delete_Entity()'><b>e_Delete_Entity</b><br>Test class: tests.TestEntityFeatures<br/>
+<a href="#Output-1178861747" onClick='toggleBox("Output-1178861747", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1178861747" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1178861747">
+=====TestCase Delete Entity Started=====<br/>
+Clicked on Entity sidebar link<br><br/>
+Record found after matching the data in the grid AutoChildEntity7<br><br/>
+Clicked on delete<br><br/>
+AutoChildEntity7 Data not found in the Grid Table<br>stale element reference: element is not attached to the page document
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.43.600210 (68dcf5eebde37173d4027fa8635e332711d2874a),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'DELL-PC', ip: '192.168.1.6', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.43.600210 (68dcf5eebde371..., userDataDir: C:\Users\Anjana\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:63658}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: 6cd60536eff118ac765ebdc28ae49162<br/>
+AutoChildEntity7 Data deleted successfully<br><br/>
+=====TestCase Delete Entity Completed=====<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>tests.TestEntityFeatures@3c419631</td></tr>
+</table><p>
+</body>
+</html>
